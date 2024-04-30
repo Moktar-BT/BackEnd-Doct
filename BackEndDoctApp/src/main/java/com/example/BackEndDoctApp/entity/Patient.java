@@ -16,8 +16,13 @@ public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Long cin;
     private String nom;
     private String prenom;
+    private String mail;
+    private String password;
+    @Column(name = "nb_rdv_rate")
+    private int nbRdvRate;
 
 
 }

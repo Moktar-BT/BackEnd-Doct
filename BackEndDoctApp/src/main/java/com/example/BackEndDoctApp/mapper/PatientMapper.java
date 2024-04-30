@@ -10,16 +10,24 @@ public class PatientMapper {
     {
         return new PatientDto(
                 patient.getId(),
+                patient.getCin(),
                 patient.getNom(),
-                patient.getPrenom()
+                patient.getPrenom(),
+                patient.getMail(),
+                patient.getPassword(),
+                patient.getNbRdvRate()
 
         );
     }
     public static Patient mapToPatient (PatientDto patientDto){
         return new Patient(
                 patientDto.getId(),
+                patientDto.getCin(),
                 patientDto.getNom(),
-                patientDto.getPrenom()
+                patientDto.getPrenom(),
+                patientDto.getMail(),
+                patientDto.getPassword(),
+                patientDto.getNbRdvRate()
         );
 
     }

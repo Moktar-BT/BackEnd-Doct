@@ -12,7 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class PatientDto {
     private Long id;
-    private Long cin;
+    private int cin;
     private String nom;
     private String prenom;
     private String mail;
